@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+<ShortName>Fórum Mozilla.cz</ShortName>
+<Description>Vyhledávání na Fórum.Mozilla.cz</Description>
+<InputEncoding>UTF-8</InputEncoding>
+<Image type="image/x-icon" width="16" height="16">http://forum.mozilla.cz/favicon.ico</Image>
+<Image width="16" height="16">data:image/vnd.microsoft.icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAABAAAAAAAAAACAAACAAAAAgIAAgAAAAIAAgACAgAAAwMDAAMDcwADwyqYABAQEAAgICAAMDAwAERERABYWFgAcHBwAIiIiACkpKQBVVVUATU1NAEJCQgA5OTkAgHz/AFBQ/wCTANYA/+zMAMbW7wDW5+cAkKmtAAAAMwAAAGYAAACZAAAAzAAAMwAAADMzAAAzZgAAM5kAADPMAAAz/wAAZgAAAGYzAABmZgAAZpkAAGbMAABm/wAAmQAAAJkzAACZZgAAmZkAAJnMAACZ/wAAzAAAAMwzAADMZgAAzJkAAMzMAADM/wAA/2YAAP+ZAAD/zAAzAAAAMwAzADMAZgAzAJkAMwDMADMA/wAzMwAAMzMzADMzZgAzM5kAMzPMADMz/wAzZgAAM2YzADNmZgAzZpkAM2bMADNm/wAzmQAAM5kzADOZZgAzmZkAM5nMADOZ/wAzzAAAM8wzADPMZgAzzJkAM8zMADPM/wAz/zMAM/9mADP/mQAz/8wAM///AGYAAABmADMAZgBmAGYAmQBmAMwAZgD/AGYzAABmMzMAZjNmAGYzmQBmM8wAZjP/AGZmAABmZjMAZmZmAGZmmQBmZswAZpkAAGaZMwBmmWYAZpmZAGaZzABmmf8AZswAAGbMMwBmzJkAZszMAGbM/wBm/wAAZv8zAGb/mQBm/8wAzAD/AP8AzACZmQAAmTOZAJkAmQCZAMwAmQAAAJkzMwCZAGYAmTPMAJkA/wCZZgAAmWYzAJkzZgCZZpkAmWbMAJkz/wCZmTMAmZlmAJmZmQCZmcwAmZn/AJnMAACZzDMAZsxmAJnMmQCZzMwAmcz/AJn/AACZ/zMAmcxmAJn/mQCZ/8wAmf//AMwAAACZADMAzABmAMwAmQDMAMwAmTMAAMwzMwDMM2YAzDOZAMwzzADMM/8AzGYAAMxmMwCZZmYAzGaZAMxmzACZZv8AzJkAAMyZMwDMmWYAzJmZAMyZzADMmf8AzMwAAMzMMwDMzGYAzMyZAMzMzADMzP8AzP8AAMz/MwCZ/2YAzP+ZAMz/zADM//8AzAAzAP8AZgD/AJkAzDMAAP8zMwD/M2YA/zOZAP8zzAD/M/8A/2YAAP9mMwDMZmYA/2aZAP9mzADMZv8A/5kAAP+ZMwD/mWYA/5mZAP+ZzAD/mf8A/8wAAP/MMwD/zGYA/8yZAP/MzAD/zP8A//8zAMz/ZgD//5kA///MAGZm/wBm/2YAZv//AP9mZgD/Zv8A//9mACEApQBfX18Ad3d3AIaGhgCWlpYAy8vLALKysgDX19cA3d3dAOPj4wDq6uoA8fHxAPj4+ADw+/8ApKCgAICAgAAAAP8AAP8AAAD//wD/AAAA/wD/AP//AAD///8ACgoKCgoKCgoKCgoKCgoKCgoKCgoHAQEMbQoKCgoKCgoAAAdDH/kgHRIAAAAAAAAAAADrHfn5ASQQAAAAAAAAAArsBx0B+fkgHesAAAAAAAD/Cgwf+fn5IA4dEus/IvcACgcMAfkg+QEB+SABHushbf8QHR/5HQH5+QEdHetEHx4K7B/5+QH5+fkdDBL5+SBE/wwdJfkf+fn5AR8g+fkfEArsCh/5+QEeJR/5+SAeBwAACgoe+SAlHwFAEhAfAAAAAPcKHh8eASYBHhAMAAAAAAAA9EMdIB8gHh0dBwAAAAAAAAAA7BAdQ+wHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AADwfwAAwH8AAMB/AAAAPwAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAQAAgAcAAIAPAADADwAA8D8AAP//AAA=</Image>
+
+<Url type="text/html" method="GET" template="http://www.google.com/cse?cx=000059552786512968692%3Atdzym5jxivq&amp;cof=FORID%3A0&amp;ie=utf-8&amp;q={searchTerms}"></Url>
+
+<moz:SearchForm>http://forum.mozilla.cz</moz:SearchForm>
+<Tags>firefox thunderbird mozilla</Tags>
+<Contact>info@mozilla.cz</Contact>
+<Language>cs</Language>
+<Developer>Mozilla.cz</Developer>
+</OpenSearchDescription>

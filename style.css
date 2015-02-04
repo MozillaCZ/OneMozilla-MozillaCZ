@@ -1,0 +1,308 @@
+/*
+Theme Name:     One Mozilla - Mozilla.cz
+Theme URI:      http://www.mozilla.cz/
+Description:    WordPress theme for Czech Mozilla.cz website, based on One Mozilla WordPress theme by Craig Cook.
+Author:         Mozilla.cz
+Author URI:     http://www.mozilla.cz/
+Template:       OneMozilla
+Version:        1.3
+*/
+
+/* Zahlavi */
+#masthead {
+  background-position: right center !important;
+}
+
+/* Vyhledavaci formular ve widgetu */
+div.sidebar form[id^="searchbox_"] input[name="q"] {
+	width: 90%;
+}
+
+div.sidebar form[id^="searchbox_"] input[type="submit"] {
+	margin-top: 0.5em;
+}
+
+/* Tlacitko ke stazeni ve widgetu */
+.download-button .download-link {
+	max-width: 176px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.download-button .download-link {
+		max-width: 116px;
+	}
+	.download-button .download-content .download-title {
+		font-size: 18px !important;
+	}
+}
+
+/* Styly pouzivane ve zpravickach a na strankach */
+.news-logo {
+	float: right;
+	margin: 0 0 0.5em 0.8em;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	position: relative;
+	background: #fff; /*jako .entry-comments*/
+	-ms-box-shadow: 0 1px 1px rgba(0,0,0,.1); /*jako .entry-comments*/
+	-o-box-shadow: 0 1px 1px rgba(0,0,0,.1); /*jako .entry-comments*/
+	box-shadow: 0 1px 1px rgba(0,0,0,.1); /*jako .entry-comments*/
+}
+
+.news-logo img {
+	background: none;
+	border: none !important;
+	-ms-box-shadow: none !important;
+	-o-box-shadow: none !important;
+	box-shadow: none !important;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@media screen and (max-width: 480px) {
+	.news-logo {
+		display: none;
+	}
+}
+
+.soubor {
+	background-color: #d9e6f2;
+	font-style: italic;
+	white-space: nowrap;
+}
+
+.nabidka {
+	background: #e8e8e8;
+}
+
+.soubor, .nabidka {
+	color: #303030;
+	padding: 2px 4px;
+}
+
+.codear {
+	background-color: #f0f6f9;
+	padding: 0.5em;
+	color: black;
+}
+
+/* Prectete si take */
+div.navigation, div.similar-posts {
+	padding: 0.5em;
+}
+div.navigation a {
+	display: block;
+	position: relative;
+}
+div.navigation a:nth-child(odd) {
+	text-align: left;
+	padding-left: 0.5em;
+}
+div.navigation a:nth-child(odd)::before {
+	content: "«";
+	position: absolute;
+	left: -0.5em;
+	color: black !important;
+}
+div.navigation a:nth-child(even) {
+	text-align: right;
+	padding-right: 0.5em;
+}
+div.navigation a:nth-child(even)::after {
+	content: "»";
+	position: absolute;
+	right: -0.5em;
+	color: black !important;
+}
+div.similar-posts ul {
+	padding: inherit;
+	list-style-type: disc;
+}
+
+/* Informace pod komentari */
+#notification-area {
+	padding: 0.8em;
+	background-color: #f0f6f9;
+}
+
+#notification-area p {
+	margin-bottom: 0;
+}
+
+#notification-area ul {
+	padding: inherit;
+	margin-bottom: 0;
+	list-style-type: disc;
+}
+
+#notification-area ul li {
+	margin: 0;
+}
+
+/* Odkazovani na weby v jinem jazyce */
+:link[hreflang]:not([hreflang|=cs])::after {
+	content: attr(hreflang);
+	text-transform: uppercase;
+	vertical-align: super;
+	font-size: 0.5em;
+}
+
+/* Vzhled tabulky - Prehled souboru v profilech */
+table.nice * {
+	vertical-align: middle;
+}
+
+table.nice > thead {
+	font-weight: bold;
+	background-color: #1e4262;
+	color: white;
+}
+
+table.nice td {
+	border-left: none;
+	border-right: none;
+}
+
+table.nice img {
+	border: none;
+	background: none;
+	-ms-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+
+/* Stranky "Ke stazeni" */
+.download-box, #download-box {
+	-moz-border-radius: 1em;
+	border-radius: 1em;
+	padding: 1em;
+	margin: 1em 0;
+}
+
+.download-box .news-logo, #download-box .news-logo,
+#download-box img, .download-box img{
+	background: none !important;
+	border: none !important;
+	-ms-box-shadow: none !important;
+	-o-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+#firefox.download-box, #firefox-langpack.download-box, #firefox-android.download-box {
+	background-color: #fff1e4;
+}
+#thunderbird.download-box, #thunderbird-langpack.download-box {
+	background-color: #e8f0ff;
+}
+#seamonkey.download-box, #seamonkey-langpack.download-box {
+	background-color: #eeeeee;
+}
+.langpack.download-box ul, #firefox-android.download-box ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.download-app-logo {
+	text-align: center;
+}
+
+.download-box-version {
+	margin: 0 0 10px 20px;
+}
+
+.download-box-link {
+	text-align: right;
+	margin: 1em 1em 0 0;
+	font-size: 0.8em;
+}
+
+.download-ico-win {
+	background-image: url(/images/windows-16.png);
+}
+
+.download-ico-linux {
+	background-image: url(/images/linux-16.png);
+}
+
+.download-ico-mac {
+	background-image: url(/images/mac-os-x-16.png);
+}
+
+.download-ico-flash {
+	background-image: url(/images/flash-16.png);
+}
+
+.download-ico-reader {
+	background-image: url(/images/reader-16.png);
+}
+
+.download-ico-silverlight {
+	background-image: url(/images/silverlight-16.png);
+}
+
+.download-ico-java {
+	background-image: url(/images/java-16.png);
+}
+
+.download-ico-ff {
+	background-image: url(/images/firefox-16.png);
+}
+
+.download-ico-tb {
+	background-image: url(/images/thunderbird-16.png);
+}
+
+.download-ico-sm {
+	background-image: url(/images/seamonkey-16.png);
+}
+
+.download-ico-addon {
+	background-image: url(/images/addon-16.png);
+}
+
+.download-ico-nvu {
+	background-image: url(/images/nvu-16.png);
+}
+
+.download-ico-kompozer {
+	background-image: url(/images/kompozer-16.png);
+}
+
+.download-ico-android {
+	background-image: url(/images/android-16.png);
+}
+
+.download-ico-bluegriffon {
+	background-image: url(/images/bluegriffon-16.png);
+}
+
+.download-ico-win,
+.download-ico-linux,
+.download-ico-mac,
+.download-ico-flash,
+.download-ico-reader,
+.download-ico-silverlight,
+.download-ico-java,
+.download-ico-ff,
+.download-ico-tb,
+.download-ico-sm,
+.download-ico-addon, 
+.download-ico-nvu,
+.download-ico-kompozer, 
+.download-ico-android,
+.download-ico-bluegriffon {
+	background-position: left center;
+	background-repeat: no-repeat;
+	display: block;
+	padding: 2px 0 2px 20px; /*padding-left jako margin-left u .download-box-version*/
+}
+
+/* Paticka */
+footer #foot-logo .logo {
+  background-image: url("img/logo-mozillacz-lt.png");
+  width: 118px;
+}
+
