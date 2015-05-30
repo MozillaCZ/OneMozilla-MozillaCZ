@@ -7,7 +7,7 @@
   <div class="wrap">
     <p id="foot-logo">
       <a class="top" href="#page"><?php _e('Return to top', 'onemozilla'); ?></a>
-      <a class="logo" href="http://www.mozilla.cz/" rel="external">Mozilla.cz</a>
+      <a class="logo" href="/">Mozilla.cz</a>
     </p>
 
     <p id="colophon">
@@ -16,8 +16,8 @@
 
     <nav id="nav-meta">
       <ul role="navigation">
-        <li><a href="http://www.mozilla.cz/o-nas/" rel="external"><?php _e('Contact Us', 'onemozilla'); ?></a></li>
-		<li><a href="http://www.mozilla.cz/mapa-webu/" rel="external">Mapa webu</a></li>
+        <li><a href="/o-nas/"><?php _e('Contact Us', 'onemozilla'); ?></a></li>
+		<li><a href="/mapa-webu/">Mapa webu</a></li>
         <li><a href="https://github.com/MozillaCZ/OneMozilla-MozillaCZ" rel="external"><?php _e('Theme Code ', 'onemozilla'); ?></a></li>
       </ul>
     </nav>
