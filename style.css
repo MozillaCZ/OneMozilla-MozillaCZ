@@ -90,7 +90,7 @@ div.sidebar form[id^="searchbox_"] input[type="submit"] {
 }
 
 /* Prectete si take */
-div.navigation, div.similar-posts {
+div.navigation, div.similar-posts, div.yarpp-related {
 	padding: 0.5em;
 }
 div.navigation a {
@@ -117,7 +117,7 @@ div.navigation a:nth-child(even)::after {
 	right: -0.5em;
 	color: black !important;
 }
-div.similar-posts ul {
+div.similar-posts ul, div.yarpp-related ul {
 	padding: inherit;
 	list-style-type: disc;
 }
