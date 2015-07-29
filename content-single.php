@@ -60,10 +60,8 @@
     </div>
 <?php
   // uses Yet Another Related Posts Plugin (YARPP)
-  } else if(is_plugin_active('yet-another-related-posts-plugin/yarpp.php')) { ?>
-    <div class="similar-posts">
-      <?php related_posts(); ?>
-    </div>
-<?php
+  } else if(is_plugin_active('yet-another-related-posts-plugin/yarpp.php')) {
+    related_posts();
+    wp_dequeue_style('yarppRelatedCss');
   }
 ?>
