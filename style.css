@@ -14,11 +14,11 @@ Version:        1.4
 }
 
 /* Vyhledavaci formular ve widgetu */
-div.sidebar form[id^="searchbox_"] input[name="q"] {
+.sidebar form[id^="searchbox_"] input[name="q"] {
 	width: 90%;
 }
 
-div.sidebar form[id^="searchbox_"] input[type="submit"] {
+.sidebar form[id^="searchbox_"] input[type="submit"] {
 	margin-top: 0.5em;
 }
 
@@ -78,7 +78,8 @@ div.sidebar form[id^="searchbox_"] input[type="submit"] {
 	background: #e8e8e8;
 }
 
-.soubor, .nabidka {
+.soubor,
+.nabidka {
 	color: #303030;
 	padding: 2px 4px;
 }
@@ -90,34 +91,42 @@ div.sidebar form[id^="searchbox_"] input[type="submit"] {
 }
 
 /* Prectete si take */
-div.navigation, div.similar-posts, div.yarpp-related {
+#content-main .navigation,
+#content-main .similar-posts,
+#content-main .yarpp-related {
 	padding: 0.5em;
 }
-div.navigation a {
+
+#content-main .navigation a {
 	display: block;
 	position: relative;
 }
-div.navigation a:nth-child(odd) {
+
+#content-main .navigation a:nth-child(odd) {
 	text-align: left;
 	padding-left: 0.5em;
 }
-div.navigation a:nth-child(odd)::before {
+
+#content-main .navigation a:nth-child(odd)::before {
 	content: "«";
 	position: absolute;
 	left: -0.5em;
 	color: black !important;
 }
-div.navigation a:nth-child(even) {
+
+#content-main .navigation a:nth-child(even) {
 	text-align: right;
 	padding-right: 0.5em;
 }
-div.navigation a:nth-child(even)::after {
+#content-main .navigation a:nth-child(even)::after {
 	content: "»";
 	position: absolute;
 	right: -0.5em;
 	color: black !important;
 }
-div.similar-posts ul, div.yarpp-related ul {
+
+#content-main .similar-posts ul,
+#content-main .yarpp-related ul {
 	padding: inherit;
 	list-style-type: disc;
 }
@@ -175,15 +184,18 @@ table.nice img {
 }
 
 /* Stranky "Ke stazeni" */
-.download-box, #download-box {
+.download-box,
+#download-box {
 	-moz-border-radius: 1em;
 	border-radius: 1em;
 	padding: 1em;
 	margin: 1em 0;
 }
 
-.download-box .news-logo, #download-box .news-logo,
-#download-box img, .download-box img{
+.download-box .news-logo,
+#download-box .news-logo,
+#download-box img,
+.download-box img {
 	background: none !important;
 	border: none !important;
 	-ms-box-shadow: none !important;
@@ -191,16 +203,24 @@ table.nice img {
 	box-shadow: none !important;
 }
 
-#firefox.download-box, #firefox-langpack.download-box, #firefox-android.download-box {
+#firefox.download-box,
+#firefox-langpack.download-box,
+#firefox-android.download-box {
 	background-color: #fff1e4;
 }
-#thunderbird.download-box, #thunderbird-langpack.download-box {
+
+#thunderbird.download-box,
+#thunderbird-langpack.download-box {
 	background-color: #e8f0ff;
 }
-#seamonkey.download-box, #seamonkey-langpack.download-box {
+
+#seamonkey.download-box,
+#seamonkey-langpack.download-box {
 	background-color: #eeeeee;
 }
-.langpack.download-box ul, #firefox-android.download-box ul {
+
+.langpack.download-box ul,
+#firefox-android.download-box ul {
 	margin-top: 0;
 	margin-bottom: 0;
 }
