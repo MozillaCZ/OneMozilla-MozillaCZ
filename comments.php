@@ -60,17 +60,19 @@
     <form id="comment-form" action="<?php echo esc_attr(get_option('siteurl')); ?>/wp-comments-post.php" method="post">
       <fieldset>
         <legend><span><?php comment_form_title( __('Post Your Comment', 'onemozilla'), __('Reply to %s', 'onemozilla') ); ?></span></legend>
-        <div id="notification-area">
-			<p>
-                Komentáře na serveru Mozilla.cz jsou <strong>moderované</strong>. Budeme rádi, pokud původní příspěvek
-                rozšíříte hodnotným komentářem. Aby byl schválen, dodržte prosím následující body:
-			</p>
-			<ul>
-                <li>Svůj komentář pište slušně a podepište se pod něj.</li>
-                <li>Pokud se chcete na něco zeptat, <a href="http://forum.mozilla.cz/"><strong>navštivte naše fórum podpory</strong></a>.</li>
-                <li>Komentář by se měl týkat podstaty příspěvku.</li>
-			</ul>
-		</div>
+        <?php if ( 1 == get_option('comment_moderation') ) : ?>
+            <div id="notification-area">
+			    <p>
+                    Komentáře na serveru Mozilla.cz jsou <strong>moderované</strong>. Budeme rádi, pokud původní příspěvek
+                    rozšíříte hodnotným komentářem. Aby byl schválen, dodržte prosím následující body:
+			    </p>
+			    <ul>
+                    <li>Svůj komentář pište slušně a podepište se pod něj.</li>
+                    <li>Pokud se chcete na něco zeptat, <a href="http://forum.mozilla.cz/"><strong>navštivte naše fórum podpory</strong></a>.</li>
+                    <li>Komentář by se měl týkat podstaty příspěvku.</li>
+			    </ul>
+		    </div>
+        <?php endif; ?>
         <p id="cancel-comment-reply"><?php cancel_comment_reply_link('Cancel Reply'); ?></p>
         <ol>
         <?php if ( $user_ID ) : ?>
