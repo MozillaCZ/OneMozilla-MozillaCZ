@@ -17,14 +17,22 @@ function one_mozilla_css() {
 	wp_enqueue_style('download-button', get_stylesheet_directory_uri().'/download-button.css');
 }
 
-/* Remove information about WordPress and its version from HTML */
-remove_action('wp_head', 'wp_generator');
-function remove_cssjs_ver( $src ) {
-	if(strpos($src, '?ver=')) {
-		$src = remove_query_arg('ver', $src);
+/* Remove unnecessary header information */
+function remove_header_info() {
+	remove_action( 'wp_head', 'rsd_link' );
+	remove_action( 'wp_head', 'wlwmanifest_link' );
+	remove_action( 'wp_head', 'wp_generator' );
+}
+add_action( 'init', 'remove_header_info' );
+/* Remove wp version meta tag and from rss feed */
+add_filter('the_generator', '__return_false');
+/* Remove wp version param from any enqueued scripts */
+function remove_wp_ver_css_js( $src ) {
+	if ( strpos( $src, '?ver=' ) ) {
+		$src = remove_query_arg( 'ver', $src );
 	}
 	return $src;
 }
-add_filter('style_loader_src', 'remove_cssjs_ver', 10, 2);
-add_filter('script_loader_src', 'remove_cssjs_ver', 10, 2);
+add_filter( 'style_loader_src', 'remove_wp_ver_css_js', 10, 2 );
+add_filter( 'script_loader_src', 'remove_wp_ver_css_js', 10, 2 );
 
