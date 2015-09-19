@@ -52,15 +52,9 @@
   <?php next_post_link('%link') ?>
 </div>
 <?php
-  // uses Similar Posts plugin
-  include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
-  if(is_plugin_active('similar-posts/similar-posts.php')) { ?>
-    <div class="similar-posts">
-      <?php similar_posts(); ?>
-    </div>
-<?php
   // uses Yet Another Related Posts Plugin (YARPP)
-  } else if(is_plugin_active('yet-another-related-posts-plugin/yarpp.php')) {
+  include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+  if(is_plugin_active('yet-another-related-posts-plugin/yarpp.php')) {
     related_posts();
     wp_dequeue_style('yarppRelatedCss');
   }
