@@ -92,7 +92,6 @@ Version:        1.4
 
 /* Prectete si take */
 #content-main .navigation,
-#content-main .similar-posts,
 #content-main .yarpp-related {
 	padding: 0.5em;
 }
@@ -125,7 +124,6 @@ Version:        1.4
 	color: black !important;
 }
 
-#content-main .similar-posts ul,
 #content-main .yarpp-related ul {
 	padding: inherit;
 	list-style-type: disc;
