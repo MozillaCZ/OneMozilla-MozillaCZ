@@ -37,6 +37,7 @@
         printf( '<meta name="msapplication-TileImage" content="%s">'.PHP_EOL, esc_url( get_stylesheet_directory_uri()."/img/favicon-196x196.png" ) );
     }
   ?>
+  <meta name="msapplication-config" content="none">
   <?php if ( get_option('onemozilla_share_posts') == 1 ) : ?>
   <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/socialshare.css">
   <?php endif; ?>
