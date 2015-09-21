@@ -48,7 +48,7 @@
 
   <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>">
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-  <link rel="search" type="application/opensearchdescription+xml" title="Mozilla.cz" href="<?php echo get_stylesheet_directory_uri(); ?>/search/Mozilla.cz.xml">
+  <link rel="search" type="application/opensearchdescription+xml" title="Mozilla.cz" href="http://www.mozilla.cz/searchmodule.xml">
   <link rel="search" type="application/opensearchdescription+xml" title="Fórum.Mozilla.cz" href="http://forum.mozilla.cz/searchmodule.xml">
 
   <title><?php
