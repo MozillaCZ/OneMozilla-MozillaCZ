@@ -293,6 +293,10 @@ table.nice img {
 	background-image: url(/images/android-16.png);
 }
 
+.download-ico-ios {
+	background-image: url(/images/apple-16.png);
+}
+
 .download-ico-bluegriffon {
 	background-image: url(/images/bluegriffon-16.png);
 }
@@ -307,10 +311,11 @@ table.nice img {
 .download-ico-ff,
 .download-ico-tb,
 .download-ico-sm,
-.download-ico-addon, 
+.download-ico-addon,
 .download-ico-nvu,
-.download-ico-kompozer, 
+.download-ico-kompozer,
 .download-ico-android,
+.download-ico-ios,
 .download-ico-bluegriffon {
 	background-position: left center;
 	background-repeat: no-repeat;
@@ -323,4 +328,3 @@ footer #foot-logo .logo {
   background-image: url("img/logo-mozillacz-lt.png");
   width: 118px;
 }
-
