@@ -68,7 +68,7 @@
 			    </p>
 			    <ul>
                     <li>Svůj komentář pište slušně a podepište se pod něj.</li>
-                    <li>Pokud se chcete na něco zeptat, <a href="http://forum.mozilla.cz/"><strong>navštivte naše fórum podpory</strong></a>.</li>
+                    <li>Pokud hledáte pomoc, <a href="/podpora/"><strong>navštivte sekci Podpora</strong></a>.</li>
                     <li>Komentář by se měl týkat podstaty příspěvku.</li>
 			    </ul>
 		    </div>
