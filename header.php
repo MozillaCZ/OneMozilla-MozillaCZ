@@ -10,12 +10,24 @@
   <meta property="og:title" content="<?php if (is_singular()) : single_post_title(); else : bloginfo('name'); endif; ?>">
   <meta property="og:url" content="<?php if (is_singular()) : the_permalink(); else : bloginfo('url'); endif; ?>">
   <meta property="og:description" content="<?php fc_meta_desc(); ?>">
-<?php if (is_singular() && has_post_thumbnail()) : ?>
-  <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'thumbnail' ); ?>
-  <meta property="og:image" content="<?php echo $thumb['0']; ?>">
+<?php if (is_singular()) : ?>
+  <?php if ($thumbs = get_attached_media('image')) : ?>
+    <?php foreach ($thumbs as $thumb) : ?>
+      <?php $thumb = wp_get_attachment_image_src( $thumb->ID, 'medium' ); ?>
+      <meta property="og:image" content="<?php echo $thumb['0']; ?>">
+    <?php endforeach; ?>
+  <?php endif; ?>
+  <?php if (has_post_thumbnail()) : ?>
+  <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'medium' ); ?>
+    <meta property="og:image" content="<?php echo $thumb['0']; ?>">
+  <?php else : ?>
+    <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/img/mozilla-wordmark.png">
+  <?php endif; ?>
 <?php elseif (get_header_image()) : ?>
   <meta property="og:image" content="<?php echo get_header_image(); ?>">
 <?php endif; ?>
+  <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/img/mozilla-wordmark.png">
+
 
   <meta name="title" content="<?php if (is_singular()) : single_post_title(); echo ' | '; endif; bloginfo('name'); ?>">
   <meta name="description" content="<?php fc_meta_desc(); ?>">
@@ -41,8 +53,7 @@
   <?php if ( get_option('onemozilla_share_posts') == 1 ) : ?>
   <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/socialshare.css">
   <?php endif; ?>
-  <link rel="stylesheet" type="text/css" media="screen,projection" href="<?php bloginfo('stylesheet_url'); ?>">
-  <link rel="stylesheet" type="text/css" media="all" href="https://mozorg.cdn.mozilla.net/media/css/tabzilla-min.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo('stylesheet_url'); ?>">
   <link rel="stylesheet" type="text/css" media="print" href="<?php echo get_template_directory_uri(); ?>/css/print.css">
   <!--[if lte IE 7]><link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/ie7.css"><![endif]-->
 
@@ -69,7 +80,7 @@
 <body <?php body_class($theme_options['color_scheme']); ?>>
 <div id="page"><div class="wrap">
   <nav id="nav-access">
-    <ul role="navigation">
+    <ul>
       <li><a href="#content-main" tabindex="1"><?php _e( 'Skip to main content', 'onemozilla' ); ?></a></li>
       <li><a href="#content-sub" tabindex="2"><?php _e( 'Skip to sidebar', 'onemozilla' ); ?></a></li>
     <?php if ( is_active_widget( false, false, 'search', true ) || ( !is_active_sidebar('sidebar') ) ) : ?>

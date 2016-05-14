@@ -1,10 +1,10 @@
 <?php // Do not delete these lines
   if (!empty($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME']))
     die ('Please do not load this page directly. Thanks!');
-  
+
   /* Get the number of comments */
   $comment_count = get_comments_number($post->ID);
-  
+
   /* This variable is for alternating comment background */
   $oddcomment = 'alt';
 ?>
@@ -26,12 +26,12 @@
 ?>
 
   <header class="comments-head">
-    <h2><?php if($comment_count > 0) { printf(_n( 'One response', '%d responses', $comment_count, 'onemozilla'), $comment_count); } else { _e('No responses yet', 'onemozilla'); } ?></h2>
+    <h2><?php if($comment_count > 0) { printf(_n( '1 response', '%d responses', $comment_count, 'onemozilla'), $comment_count); } else { _e('No responses yet', 'onemozilla'); } ?></h2>
     <?php if (comments_open()) : ?><p class="cmt-post"><a href="#respond"><?php _e('Post a comment','onemozilla'); ?></a></p><?php endif; ?>
   </header>
 
 <?php if ( have_comments() ) : // If there are comments ?>
-  <ol id="comment-list" class="hfeed <?php if (get_option('show_avatars')) echo 'av'; // provides a style hook when avatars are enabled ?>">
+  <ol id="comment-list" class="comment-list hfeed <?php if (get_option('show_avatars')) echo 'av'; // provides a style hook when avatars are enabled ?>">
   <?php wp_list_comments('type=all&style=ol&callback=onemozilla_comment'); // Comment template is in functions.php ?>
   </ol>
 
