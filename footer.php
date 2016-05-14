@@ -3,7 +3,7 @@
   </main><!-- #content -->
 </div></div><!-- /.wrap /#page -->
 
-<footer id="site-info" role="contentinfo">
+<footer id="site-info">
   <div class="wrap">
     <p id="foot-logo">
       <a class="top" href="#page"><?php _e('Return to top', 'onemozilla'); ?></a>
@@ -15,7 +15,7 @@
     </p>
 
     <nav id="nav-meta">
-      <ul role="navigation">
+      <ul>
         <li><a href="/o-nas/"><?php _e('Contact Us', 'onemozilla'); ?></a></li>
 		<li><a href="/mapa-webu/">Mapa webu</a></li>
         <li><a href="https://github.com/MozillaCZ/OneMozilla-MozillaCZ" rel="external"><?php _e('Theme Code ', 'onemozilla'); ?></a></li>
@@ -23,8 +23,6 @@
     </nav>
   </div>
 </footer>
-
-<script src="https://mozorg.cdn.mozilla.net/tabzilla/tabzilla.js"></script>
 
 <?php wp_footer(); ?>
 
