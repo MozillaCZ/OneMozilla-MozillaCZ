@@ -37,17 +37,32 @@ Version:        1.4
 }
 
 /* Styly pouzivane ve zpravickach a na strankach */
+.post .entry-header {
+	padding-right: 92px;
+}
+
+@media screen and (max-width: 480px) {
+    .post .entry-header {
+        padding-right: 0;
+    }
+}
+
 .news-logo {
-	float: right;
 	margin: 0 0 0.5em 0.8em;
-	width: 100px;
-	height: 100px;
+	width: 72px;
+	height: 72px;
 	text-align: center;
-	position: relative;
+	position: absolute;
+	top: 0;
+	right: 0;
 	background: #fff; /*jako .entry-comments*/
 	-ms-box-shadow: 0 1px 1px rgba(0,0,0,.1); /*jako .entry-comments*/
 	-o-box-shadow: 0 1px 1px rgba(0,0,0,.1); /*jako .entry-comments*/
 	box-shadow: 0 1px 1px rgba(0,0,0,.1); /*jako .entry-comments*/
+}
+
+.news-logo + br {
+	display: none;
 }
 
 .news-logo img {
@@ -57,9 +72,9 @@ Version:        1.4
 	-o-box-shadow: none !important;
 	box-shadow: none !important;
 	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 }
 
 @media screen and (max-width: 480px) {
