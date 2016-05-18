@@ -41,10 +41,14 @@ Version:        1.4
 	padding-right: 92px;
 }
 
+.archive .post .entry-header {
+	padding-right: 0;
+}
+
 @media screen and (max-width: 480px) {
-    .post .entry-header {
-        padding-right: 0;
-    }
+	.post .entry-header {
+		padding-right: 0;
+	}
 }
 
 .news-logo {
@@ -55,10 +59,6 @@ Version:        1.4
 	position: absolute;
 	top: 0;
 	right: 0;
-	background: #fff; /*jako .entry-comments*/
-	-ms-box-shadow: 0 1px 1px rgba(0,0,0,.1); /*jako .entry-comments*/
-	-o-box-shadow: 0 1px 1px rgba(0,0,0,.1); /*jako .entry-comments*/
-	box-shadow: 0 1px 1px rgba(0,0,0,.1); /*jako .entry-comments*/
 }
 
 .news-logo + br {
@@ -66,7 +66,7 @@ Version:        1.4
 }
 
 .news-logo img {
-	background: none;
+	background: none !important;
 	border: none !important;
 	-ms-box-shadow: none !important;
 	-o-box-shadow: none !important;
@@ -81,6 +81,10 @@ Version:        1.4
 	.news-logo {
 		display: none;
 	}
+}
+
+.download-app-logo img {
+	margin: 0 0.5em;
 }
 
 .soubor {
