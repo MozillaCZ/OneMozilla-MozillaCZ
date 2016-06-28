@@ -2,6 +2,11 @@
 
 /* Register Mozilla Communities logo for setting it into the header */
 register_default_headers( array(
+	'mozilla-cz' => array(
+		'url' => get_stylesheet_directory_uri().'/img/headers/MozillaCZ-03.png',
+		'thumbnail_url' => get_stylesheet_directory_uri().'/img/headers/MozillaCZ-03.png',
+		'description' => 'Mozilla.cz'
+	),
 	'mozilla-communities' => array(
 		'url' => get_stylesheet_directory_uri().'/img/headers/mozilla-communities.png',
 		'thumbnail_url' => get_stylesheet_directory_uri().'/img/headers/mozilla-communities-thumbnail.png',
