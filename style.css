@@ -202,11 +202,15 @@ table.nice img {
 
 /* Stranky "Ke stazeni" */
 .download-box,
-#download-box {
-	-moz-border-radius: 1em;
-	border-radius: 1em;
-	padding: 1em;
+#download-box,
+.download-box.entry-meta,
+#download-box.entry-meta {
 	margin: 1em 0;
+}
+
+.download-box.entry-meta,
+#download-box.entry-meta {
+	font-size: 1em;
 }
 
 .download-box .news-logo,
@@ -218,22 +222,6 @@ table.nice img {
 	-ms-box-shadow: none !important;
 	-o-box-shadow: none !important;
 	box-shadow: none !important;
-}
-
-#firefox.download-box,
-#firefox-langpack.download-box,
-#firefox-android.download-box {
-	background-color: #fff1e4;
-}
-
-#thunderbird.download-box,
-#thunderbird-langpack.download-box {
-	background-color: #e8f0ff;
-}
-
-#seamonkey.download-box,
-#seamonkey-langpack.download-box {
-	background-color: #eeeeee;
 }
 
 .langpack.download-box ul,
