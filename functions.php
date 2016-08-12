@@ -22,6 +22,12 @@ function one_mozilla_css() {
 	wp_enqueue_style('download-button', get_stylesheet_directory_uri().'/download-button.css');
 }
 
+/* Enqueue login stylesheet */
+add_action('login_enqueue_scripts', 'one_mozillacz_custom_login');
+function one_mozillacz_custom_login() {
+	wp_enqueue_style('one_mozillacz', get_stylesheet_directory_uri().'/css/login.css');
+}
+
 /* Remove unnecessary header information */
 function remove_header_info() {
 	remove_action( 'wp_head', 'rsd_link' );
