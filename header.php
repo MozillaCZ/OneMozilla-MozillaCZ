@@ -26,7 +26,7 @@
 <?php elseif (get_header_image()) : ?>
   <meta property="og:image" content="<?php echo get_header_image(); ?>">
 <?php endif; ?>
-  <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/img/mozilla-wordmark.png">
+  <meta property="og:image" content="<?php echo get_stylesheet_directory_uri(); ?>/img/MozillaCZ-02-og_image.png">
 
 
   <meta name="title" content="<?php if (is_singular()) : single_post_title(); echo ' | '; endif; bloginfo('name'); ?>">
