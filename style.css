@@ -41,6 +41,15 @@ Version:        1.4
 	padding-right: 92px;
 }
 
+.post .entry-header .share {
+	margin-top: -2.5em;
+}
+
+.post .entry-header .share,
+.post .entry-header .edit {
+	margin-right: -92px;
+}
+
 .archive .post .entry-header {
 	padding-right: 0;
 }
