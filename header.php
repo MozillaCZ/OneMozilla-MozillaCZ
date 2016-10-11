@@ -50,7 +50,7 @@
     }
   ?>
   <meta name="msapplication-config" content="none">
-  <?php if ( get_option('onemozilla_share_posts') == 1 ) : ?>
+  <?php if ( get_option('onemozilla_share_posts') == 1 || get_option('onemozilla_share_pages') == 1 ) : ?>
   <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/socialshare.css">
   <?php endif; ?>
   <link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo('stylesheet_url'); ?>">
