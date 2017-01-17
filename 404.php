@@ -12,12 +12,12 @@
           Každopádně jsme vzbudili naši cvičenou pandu, aby to šla webmásterovi oznámit.
       </p>
       <p>
-          <a href="http://commons.wikimedia.org/wiki/File:La_Palmyre_027.jpg">
+          <a href="https://commons.wikimedia.org/wiki/File:La_Palmyre_027.jpg">
              <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/panda.jpg" alt="Spící panda" class="center" />
           </a>
       </p>
       <p style="text-align: right; font-size: 10px; margin-right: 40px; margin-top: -10px;">
-          Autor: <a href="http://commons.wikimedia.org/wiki/User:Manchot">William Scot</a>, CC-BY-SA
+          Autor: <a href="https://commons.wikimedia.org/wiki/User:Manchot">William Scot</a>, CC-BY-SA
       </p>
       <p>
           Pokud by snad cestou opět usnula, dejte nám prosím o chybném odkazu vědět na <a href="mailto:info@mozilla.cz">náš e-mail</a> a my se s tím pokusíme něco udělat.
