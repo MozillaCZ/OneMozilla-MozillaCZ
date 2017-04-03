@@ -236,6 +236,10 @@ table.nice img {
 	box-shadow: none !important;
 }
 
+.entry-content .download-box ul {
+	margin: 0 0 1.5em 4%;
+}
+
 .langpack.download-box ul,
 #firefox-android.download-box ul {
 	margin-top: 0;
