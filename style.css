@@ -16,12 +16,8 @@ License URI:    https://www.gnu.org/licenses/gpl-3.0.html
 }
 
 /* Vyhledavaci formular ve widgetu */
-.sidebar form[id^="searchbox_"] input[name="q"] {
-	width: 90%;
-}
-
-.sidebar form[id^="searchbox_"] input[type="submit"] {
-	margin-top: 0.5em;
+.sidebar form[id^="search"] #s {
+	width: 100%;
 }
 
 /* Tlacitko ke stazeni ve widgetu */
