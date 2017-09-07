@@ -15,6 +15,49 @@ License URI:    https://www.gnu.org/licenses/gpl-3.0.html
   background-position: right center !important;
 }
 
+/* Mobilni menu */
+#nav-mobile {
+  background-color: #fff;
+  font-family: "Open Sans Light", sans-serif;
+  margin: 0 0 48px;
+  -ms-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  -o-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  padding: 0 20px;
+  text-align: center;
+}
+
+#nav-mobile ul {
+  list-style: none;
+  margin: 0;
+}
+
+#nav-mobile li {
+  display: inline-block;
+  padding: 12px 0;
+}
+
+#nav-mobile .current-menu-item {
+  color: #444;
+}
+
+#nav-mobile a {
+  border-left: 1px dotted #ccc;
+  display: inline-block;
+  padding: 6px 15px;
+}
+
+#nav-mobile li:first-child a {
+  border-left: 0;
+}
+
+#nav-mobile-toggle {
+  display: none;
+}
+#nav-mobile {
+  display: none;
+}
+
 /* Vyhledavaci formular ve widgetu */
 .sidebar form[id^="search"] #s {
 	width: 100%;
@@ -32,6 +75,54 @@ License URI:    https://www.gnu.org/licenses/gpl-3.0.html
 	.download-button .download-content .download-title {
 		font-size: 18px !important;
 	}
+}
+
+@media only screen and (max-width: 767px) {
+  #nav-primary,
+  #nav-top {
+    display: none;
+  }
+
+  #nav-mobile {
+     margin: 24px 0;
+     padding: 4px 10px;
+     text-align: left;
+   }
+
+  #nav-mobile ul {
+    list-style: none;
+    margin: 0;
+  }
+
+  #nav-mobile li {
+    display: block;
+    padding: 4px 0;
+    border-top: 1px dotted #ccc;
+  }
+
+  #nav-mobile li:first-child {
+    border: 0;
+  }
+
+  #nav-mobile a {
+    display: block;
+    border: 0;
+  }
+
+  #nav-mobile-toggle {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url("img/icn-nav-mobile.png");
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    z-index: 99;
+    cursor: pointer;
+  }
+  #nav-mobile.visible {
+    display: block;
+  }
 }
 
 /* Styly pouzivane ve zpravickach a na strankach */

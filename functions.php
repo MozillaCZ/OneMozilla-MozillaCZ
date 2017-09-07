@@ -1,4 +1,14 @@
 <?php
+/* Register mobile menu */
+register_nav_menu( 'mobile', __( 'Mobile Menu', 'onemozilla' ) );
+function one_mozillacz_load_scripts() {
+    if ( has_nav_menu( 'mobile' ) ) {
+        // Register and load the nav-mobile script
+        wp_register_script( 'nav-mobile', get_stylesheet_directory_uri() . '/js/nav-mobile.js', array( 'jquery' ) );
+        wp_enqueue_script( 'nav-mobile' );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'one_mozillacz_load_scripts' );
 
 /* Register Mozilla Communities logo for setting it into the header */
 register_default_headers( array(
