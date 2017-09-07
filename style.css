@@ -348,15 +348,18 @@ table.nice img {
 }
 
 .download-ico-win {
-	background-image: url(/images/windows-16.png);
+	background-image: url(/images/windows.svg);
+	background-size: 16px;
 }
 
 .download-ico-linux {
-	background-image: url(/images/linux-16.png);
+	background-image: url(/images/linux.svg);
+	background-size: 16px;
 }
 
 .download-ico-mac {
-	background-image: url(/images/mac-os-x-16.png);
+	background-image: url(/images/mac-os-x-el-capitan.svg);
+	background-size: 16px;
 }
 
 .download-ico-flash {
@@ -400,11 +403,13 @@ table.nice img {
 }
 
 .download-ico-android {
-	background-image: url(/images/android-16.png);
+	background-image: url(/images/android.svg);
+	background-size: 16px;
 }
 
 .download-ico-ios {
-	background-image: url(/images/apple-16.png);
+	background-image: url(/images/ios.svg);
+	background-size: 16px;
 }
 
 .download-ico-bluegriffon {
