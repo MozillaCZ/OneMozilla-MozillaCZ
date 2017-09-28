@@ -391,7 +391,8 @@ table.nice img {
 }
 
 .download-ico-addon {
-	background-image: url(/images/addon-16.png);
+	background-image: url(/images/addon.svg);
+	background-size: 16px;
 }
 
 .download-ico-nvu {
