@@ -173,6 +173,7 @@ License URI:    https://www.gnu.org/licenses/gpl-3.0.html
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
+	width: 64px;
 }
 
 @media screen and (max-width: 480px) {
