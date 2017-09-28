@@ -380,7 +380,8 @@ table.nice img {
 }
 
 .download-ico-ff {
-	background-image: url(/images/firefox-16.png);
+	background-image: url(/images/firefox-2013.svg);
+	background-size: 16px;
 }
 
 .download-ico-tb {
@@ -388,7 +389,8 @@ table.nice img {
 }
 
 .download-ico-sm {
-	background-image: url(/images/seamonkey-16.png);
+	background-image: url(/images/seamonkey.svg);
+	background-size: 16px;
 }
 
 .download-ico-addon {
