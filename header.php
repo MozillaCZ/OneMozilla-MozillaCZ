@@ -24,7 +24,7 @@
 <?php elseif (get_header_image()) : ?>
   <meta property="og:image" content="<?php echo get_header_image(); ?>">
 <?php endif; ?>
-  <meta property="og:image" content="<?php echo get_stylesheet_directory_uri(); ?>/img/MozillaCZ-01.png">
+  <meta property="og:image" content="<?php echo get_stylesheet_directory_uri(); ?>/img/MozillaCZ-01-1200.png">
 
 
   <meta name="title" content="<?php if (is_singular()) : single_post_title(); echo ' | '; endif; bloginfo('name'); ?>">
@@ -43,8 +43,8 @@
   <link rel="icon" type="image/ico" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico">
   <?php
     if ( ! has_site_icon() ) {
-        printf( '<link rel="apple-touch-icon" href="%s">'.PHP_EOL, esc_url( get_stylesheet_directory_uri()."/img/favicon-196x196.png" ) );
-        printf( '<meta name="msapplication-TileImage" content="%s">'.PHP_EOL, esc_url( get_stylesheet_directory_uri()."/img/favicon-196x196.png" ) );
+        printf( '<link rel="apple-touch-icon" href="%s">'.PHP_EOL, esc_url( get_stylesheet_directory_uri()."/img/MozillaCZ-03-400.png" ) );
+        printf( '<meta name="msapplication-TileImage" content="%s">'.PHP_EOL, esc_url( get_stylesheet_directory_uri()."/img/MozillaCZ-03-400.png" ) );
     }
   ?>
   <meta name="msapplication-config" content="none">

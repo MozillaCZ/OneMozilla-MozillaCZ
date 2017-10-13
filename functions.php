@@ -13,8 +13,8 @@ add_action( 'wp_enqueue_scripts', 'one_mozillacz_load_scripts' );
 /* Register Mozilla Communities logo for setting it into the header */
 register_default_headers( array(
 	'mozilla-cz' => array(
-		'url' => get_stylesheet_directory_uri().'/img/MozillaCZ-03.png',
-		'thumbnail_url' => get_stylesheet_directory_uri().'/img/MozillaCZ-03.png',
+		'url' => get_stylesheet_directory_uri().'/img/MozillaCZ-03-400.png',
+		'thumbnail_url' => get_stylesheet_directory_uri().'/img/MozillaCZ-03-400.png',
 		'description' => 'Mozilla.cz'
 	),
 	'mozilla-communities' => array(
