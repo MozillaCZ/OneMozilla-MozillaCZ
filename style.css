@@ -386,7 +386,8 @@ table.nice img {
 }
 
 .download-ico-tb {
-	background-image: url(/images/thunderbird-16.png);
+	background-image: url(/images/thunderbird-128.png);
+	background-size: 16px;
 }
 
 .download-ico-sm {
