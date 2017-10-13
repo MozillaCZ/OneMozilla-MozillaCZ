@@ -445,5 +445,6 @@ table.nice img {
 /* Paticka */
 footer #foot-logo .logo {
   background-image: url("img/MozillaCZ-02.png");
+  background-size: 123px;
   width: 123px;
 }
