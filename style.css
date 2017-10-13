@@ -339,10 +339,6 @@ table.nice img {
 	text-align: center;
 }
 
-.download-box-version {
-	margin: 0 0 10px 20px;
-}
-
 .download-box-link {
 	text-align: right;
 	margin: 1em 1em 0 0;
@@ -362,22 +358,6 @@ table.nice img {
 .download-ico-mac {
 	background-image: url(/images/mac-os-x-el-capitan.svg);
 	background-size: 16px;
-}
-
-.download-ico-flash {
-	background-image: url(/images/flash-16.png);
-}
-
-.download-ico-reader {
-	background-image: url(/images/reader-16.png);
-}
-
-.download-ico-silverlight {
-	background-image: url(/images/silverlight-16.png);
-}
-
-.download-ico-java {
-	background-image: url(/images/java-16.png);
 }
 
 .download-ico-ff {
@@ -400,14 +380,6 @@ table.nice img {
 	background-size: 16px;
 }
 
-.download-ico-nvu {
-	background-image: url(/images/nvu-16.png);
-}
-
-.download-ico-kompozer {
-	background-image: url(/images/kompozer-16.png);
-}
-
 .download-ico-android {
 	background-image: url(/images/android.svg);
 	background-size: 16px;
@@ -418,26 +390,16 @@ table.nice img {
 	background-size: 16px;
 }
 
-.download-ico-bluegriffon {
-	background-image: url(/images/bluegriffon-16.png);
-}
-
 .download-ico-win,
 .download-ico-linux,
 .download-ico-mac,
-.download-ico-flash,
-.download-ico-reader,
-.download-ico-silverlight,
-.download-ico-java,
 .download-ico-ff,
 .download-ico-tb,
 .download-ico-sm,
 .download-ico-addon,
-.download-ico-nvu,
-.download-ico-kompozer,
 .download-ico-android,
-.download-ico-ios,
-.download-ico-bluegriffon {
+.download-ico-ios
+{
 	background-position: left center;
 	background-repeat: no-repeat;
 	display: block;
