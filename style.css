@@ -185,6 +185,7 @@ License URI:    https://www.gnu.org/licenses/gpl-3.0.html
 
 .download-app-logo img {
 	margin: 0 0.5em;
+	vertical-align: middle;
 }
 
 .soubor {
