@@ -137,6 +137,7 @@ Based on https://mozorg.cdn.mozilla.net/media/css/responsive-min.css
 	margin-left:-54px;
 	_margin-left:0;
 	background:url(/images/firefox.svg) 0 0 no-repeat;
+	background-size: 5em;
 	_background-color:#659324;
 	min-height:82px;
 	margin-bottom:-12px;
