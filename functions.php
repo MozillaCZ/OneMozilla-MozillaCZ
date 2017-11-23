@@ -29,7 +29,7 @@ register_default_headers( array(
 add_action('wp_enqueue_scripts', 'one_mozilla_css');
 function one_mozilla_css() {
 	wp_enqueue_style('one_mozilla', get_template_directory_uri().'/style.css');
-	wp_enqueue_style('download-button', get_stylesheet_directory_uri().'/download-button.css');
+	wp_enqueue_style('download-button', get_stylesheet_directory_uri().'/css/download-button.css');
 }
 
 /* Enqueue login stylesheet */
