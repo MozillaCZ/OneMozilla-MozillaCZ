@@ -269,7 +269,7 @@ License URI:    https://www.gnu.org/licenses/gpl-3.0.html
 	margin: 0;
 }
 
-#comment-form input,
+#comment-form input:not([type=submit]),
 #comment-form textarea {
 	color: black;
 }
