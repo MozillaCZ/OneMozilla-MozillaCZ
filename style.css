@@ -164,7 +164,8 @@ License URI:    https://www.gnu.org/licenses/gpl-3.0.html
 	display: none;
 }
 
-.news-logo img {
+.news-logo img,
+.news-logo .fa {
 	background: none !important;
 	border: none !important;
 	-ms-box-shadow: none !important;
@@ -175,12 +176,17 @@ License URI:    https://www.gnu.org/licenses/gpl-3.0.html
 	left: 50%;
 	transform: translate(-50%,-50%);
 	width: 64px;
+	font-size: 64px;
 }
 
 @media screen and (max-width: 480px) {
 	.news-logo {
 		display: none;
 	}
+}
+
+.fa.image-like {
+	border: 10px solid #fff;
 }
 
 .download-app-logo img {
