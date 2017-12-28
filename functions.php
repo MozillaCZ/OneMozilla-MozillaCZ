@@ -32,6 +32,12 @@ function one_mozilla_css() {
 	wp_enqueue_style('download-button', get_stylesheet_directory_uri().'/css/download-button.css');
 }
 
+/* Enqueue OneMozilla original stylesheet */
+add_action('wp_enqueue_scripts', 'font_awesome_css');
+function font_awesome_css() {
+	wp_enqueue_style('font_awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+}
+
 /* Enqueue login stylesheet */
 add_action('login_enqueue_scripts', 'one_mozillacz_custom_login');
 function one_mozillacz_custom_login() {
