@@ -64,20 +64,6 @@ License URI:    https://www.gnu.org/licenses/gpl-3.0.html
 	width: 100%;
 }
 
-/* Tlacitko ke stazeni ve widgetu */
-.download-button .download-link {
-	max-width: 176px;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-	.download-button .download-link {
-		max-width: 116px;
-	}
-	.download-button .download-content .download-title {
-		font-size: 18px !important;
-	}
-}
-
 @media only screen and (max-width: 767px) {
   #nav-primary,
   #nav-top {
