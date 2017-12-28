@@ -351,16 +351,6 @@ table.nice img {
 	font-size: 0.9em;
 }
 
-.download-ico-win {
-	background-image: url(/images/windows.svg);
-	background-size: 16px;
-}
-
-.download-ico-linux {
-	background-image: url(/images/linux.svg);
-	background-size: 16px;
-}
-
 .download-ico-mac {
 	background-image: url(/images/mac-os-x-el-capitan.svg);
 	background-size: 16px;
@@ -386,25 +376,32 @@ table.nice img {
 	background-size: 16px;
 }
 
-.download-ico-android {
-	background-image: url(/images/android.svg);
-	background-size: 16px;
+.download-ico {
+	display: block;
 }
 
-.download-ico-ios {
-	background-image: url(/images/ios.svg);
-	background-size: 16px;
+.download-ico .fa {
+	font-size: 1.3em;
+	margin-right: 0.3em;
 }
 
-.download-ico-win,
-.download-ico-linux,
+.download-ico a .fa {
+	color: #333;
+}
+
+.download-ico a .fa-windows {
+	color: #0078d6;
+}
+
+.download-ico a .fa-android {
+	color: #77c159;
+}
+
 .download-ico-mac,
 .download-ico-ff,
 .download-ico-tb,
 .download-ico-sm,
-.download-ico-addon,
-.download-ico-android,
-.download-ico-ios
+.download-ico-addon
 {
 	background-position: left center;
 	background-repeat: no-repeat;
