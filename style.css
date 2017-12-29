@@ -214,7 +214,10 @@ License URI:    https://www.gnu.org/licenses/gpl-3.0.html
 }
 
 .fa.image-like {
+	background-color: #fff;
 	border: 10px solid #fff;
+	box-shadow: 0 1px 1px rgba(0,0,0,.1);
+	text-align: center;
 }
 
 .download-app-logo img {
