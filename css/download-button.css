@@ -1,3 +1,12 @@
+#nav-download-firefox {
+	font-size: 1.2em;
+	text-align: center;
+}
+
+#nav-download-firefox .download-link {
+	display: block;
+}
+
 /*
 Based on https://www.mozilla.org/media/css/firefox-home-bundle.css
 */

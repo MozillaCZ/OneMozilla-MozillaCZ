@@ -59,11 +59,6 @@ License URI:    https://www.gnu.org/licenses/gpl-3.0.html
   display: none;
 }
 
-/* Vyhledavaci formular ve widgetu */
-.sidebar form[id^="search"] #s {
-	width: 100%;
-}
-
 @media only screen and (max-width: 767px) {
   #nav-primary,
   #nav-top {
@@ -110,6 +105,53 @@ License URI:    https://www.gnu.org/licenses/gpl-3.0.html
   #nav-mobile.visible {
     display: block;
   }
+}
+
+/* Widgety */
+.sidebar form[id^="search"] #s {
+	width: 100%;
+}
+
+.sidebar .podpora .fa-life-ring {
+	float: left;
+	font-size: 3em;
+	margin-right: 0.25em;
+	margin-bottom: 0.5em;
+}
+
+.sidebar .social {
+	text-align: center;
+}
+.sidebar .social .fa {
+	font-size: 3em;
+	text-decoration: none !important;
+}
+.sidebar .social .fa:not(:last-child) {
+	margin-right: 0.3em;
+}
+.sidebar .social .fa-twitter:hover {
+	color: #1da1f2;
+}
+.sidebar .social .fa-facebook:hover {
+	color: #4267b2;
+}
+.sidebar .social .fa-meetup:hover {
+	color: #f64060;
+}
+.sidebar .social .fa-paper-plane:hover {
+	color: #2ca5e0;
+}
+
+.sidebar .next-release .fa-firefox {
+	font-size: 1.1em;
+}
+
+.sidebar .dekujeme img {
+	width: 100px;
+	filter: grayscale(100%);
+}
+.sidebar .dekujeme img:hover {
+	filter: initial;
 }
 
 /* Styly pouzivane ve zpravickach a na strankach */
