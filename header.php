@@ -40,14 +40,9 @@
 
   <link rel="copyright" href="#colophon">
   <link rel="profile" href="http://gmpg.org/xfn/11">
+  <?php if ( !has_site_icon() ) : ?>
   <link rel="icon" type="image/ico" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico">
-  <?php
-    if ( ! has_site_icon() ) {
-        printf( '<link rel="apple-touch-icon" href="%s">'.PHP_EOL, esc_url( get_stylesheet_directory_uri()."/img/MozillaCZ-03-400.png" ) );
-        printf( '<meta name="msapplication-TileImage" content="%s">'.PHP_EOL, esc_url( get_stylesheet_directory_uri()."/img/MozillaCZ-03-400.png" ) );
-    }
-  ?>
-  <meta name="msapplication-config" content="none">
+  <?php endif; ?>
   <?php if ( get_option('onemozilla_share_posts') == 1 || get_option('onemozilla_share_pages') == 1 ) : ?>
   <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/socialshare.css">
   <?php endif; ?>
